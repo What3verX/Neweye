@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/w1">
+
+    <ImageView
+        android:id="@+id/backArrow3"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/leftarrowwhite"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"/>
+
+    <LinearLayout
+        android:id="@+id/layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/linear_layout"
+        android:layout_marginTop="60dp"
+        android:padding="16dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:text="ABOUT US"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="@color/white"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Welcome to Neweye, your number one source for chatting. I'm dedicated to providing you the best Chat Based Application in the industry, with a focus on dependability and customer service. I'm working to turn my passion for developing mobile-app into a chatting application. I hope you enjoy our products as much as i enjoy offering them to you."
+            android:textSize="16sp"
+            android:lineSpacingMultiplier="1.2"
+            android:paddingBottom="16dp"
+            android:textStyle="bold"
+            android:textColor="@color/white"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Hüseyin Osmanlıoğlu - Owner of Neweye"
+            android:textSize="13sp"
+            android:textStyle="bold"
+            android:paddingTop="16dp"
+            android:paddingBottom="8dp"
+            android:layout_marginLeft="130dp"
+            android:textColor="@color/white"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/linear_bg2"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical"
+        android:padding="40dp">
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:src="@drawable/logo3"
+            android:id="@+id/imageView"/>
+
+
+
+
+
+    </LinearLayout>
+
+
+
+
+</RelativeLayout>
+
+
+
+
+
+

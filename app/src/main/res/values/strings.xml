@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Neweye</string>
+    <string name="welcome">welcome</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="close_button_description">Kapatma düğmesi</string>
+
+</resources>
