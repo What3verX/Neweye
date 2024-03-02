@@ -39,22 +39,13 @@ public class ChatAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
     ArrayList<MessageModel> messageModels;
     Context context;
     String recID;
-    HashMap<String, String> userImagesMap;
+
     int SENDER_VIEW_TYPE = 1;
     int RECEIVER_VIEW_TYPE = 2;
     public static FirebaseStorage storage = FirebaseStorage.getInstance();
     static StorageReference storageRef = storage.getReference();
 
-    public ChatAdapter(ArrayList<MessageModel> messageModels, Context context, HashMap<String, String> userImagesMap) {
-        this.messageModels = messageModels;
-        this.context = context;
-        this.userImagesMap = userImagesMap;
-    }
 
-    public ChatAdapter(ArrayList<MessageModel> messageModels, Context context) {
-        this.messageModels = messageModels;
-        this.context = context;
-    }
 
     public ChatAdapter(ArrayList<MessageModel> messageModels, Context context, String recID) {
         this.messageModels = messageModels;
@@ -137,9 +128,7 @@ public class ChatAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
         return simpleDateFormat.format(date);
     }
 
-    public void setMessageModels(ArrayList<MessageModel> messageModels) {
-        this.messageModels = messageModels;
-    }
+
 
     @Override
     public int getItemCount() {
@@ -148,7 +137,7 @@ public class ChatAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
 
     }
     FirebaseAuth mAuth = FirebaseAuth.getInstance();
-    FirebaseUser user = mAuth.getCurrentUser();
+
 
 
     public static class ReceiverViewHolder extends RecyclerView.ViewHolder {

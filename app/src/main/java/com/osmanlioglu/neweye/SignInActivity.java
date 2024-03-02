@@ -176,8 +176,7 @@ public class SignInActivity extends AppCompatActivity {
 
     }
 
-    private SignInClient oneTapClient;
-    private Intent data;
+
 
 
     }

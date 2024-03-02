@@ -16,11 +16,7 @@ import com.osmanlioglu.neweye.R;
 import com.osmanlioglu.neweye.databinding.ActivityPrivacyBinding;
 import com.osmanlioglu.neweye.databinding.FragmentGamesBinding;
 
-/**
- * A simple {@link Fragment} subclass.
- * Use the {@link GamesFragment#newInstance} factory method to
- * create an instance of this fragment.
- */
+
 public class GamesFragment extends Fragment {
     private WebView webView;
     private ProgressDialog progressDialog;
@@ -32,14 +28,7 @@ public class GamesFragment extends Fragment {
 
     }
 
-    public static GamesFragment newInstance(String param1, String param2) {
-        GamesFragment fragment = new GamesFragment();
-        Bundle args = new Bundle();
-        args.putString(ARG_PARAM1, param1);
-        args.putString(ARG_PARAM2, param2);
-        fragment.setArguments(args);
-        return fragment;
-    }
+
 
     @Override
     public void onCreate(Bundle savedInstanceState) {

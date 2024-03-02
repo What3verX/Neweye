@@ -14,8 +14,7 @@ import com.osmanlioglu.neweye.databinding.ActivityPrivacyBinding;
 public class AboutActivity extends AppCompatActivity {
     ActivityAboutBinding binding;
 
-    WebView webView;
-    Activity activity;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
